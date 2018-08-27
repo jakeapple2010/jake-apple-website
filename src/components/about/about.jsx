@@ -1,7 +1,13 @@
 import React, { Component } from 'react'
 import './about.css'
+import * as GitHubLogo from './content/GitHub_Logo_White.png'
 
 export default class about extends Component {
+
+    redirectToGitHub() {
+
+    }
+
     render() {
         return (
             <div className="about-body" id={this.props.id} key={this.props.id}>
@@ -26,7 +32,7 @@ export default class about extends Component {
                         </div>
                     </div>
                     <div className="profile-picture">
-                        <img src="https://s.gravatar.com/avatar/28f1a06272000ef136be2912ae39ef94?s=250"/>
+                        <img className="profile-picture-img" src="https://s.gravatar.com/avatar/28f1a06272000ef136be2912ae39ef94?s=250"/>
                     </div>
                     <div className="details">
                         <h3 className="self-description-title heading">
@@ -39,7 +45,14 @@ export default class about extends Component {
                             <br/>
                             <p><strong>Location:</strong> Utah, United States</p>
                             <br/>
-                            <p><strong>Github:</strong> button goes here</p>
+                            <p className="vertical-align">
+                                <strong>
+                                    Codes: 
+                                </strong>
+                                <a className="vertical-align" href='https://github.com/jakeapple2010'>
+                                    <img id='gitHubLink' src={GitHubLogo} alt='GitHub link'/>
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
