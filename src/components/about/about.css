@@ -20,6 +20,10 @@
 
 .about {
     background-color: var(--main-bg-color);
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 27.5%;
+    padding-right: 27.5%;
 }
 
 .profile-heading {
@@ -32,6 +36,8 @@
     border-bottom: 1px solid var(--border-color);
 
     font-weight: 100;
+
+    color: var(--heading-color);
 }
 
 h2 {
@@ -45,13 +51,6 @@ h2 {
 div {
     flex: 1;
     align-self: top;
-}
-
-.wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    padding-left: 27.5%;
-    padding-right: 27.5%;
 }
 
 .profile-picture-img {
@@ -89,10 +88,6 @@ p {
     margin-top: 5px;
     margin-bottom: 5px;
 
-}
-
-.heading {
-    color: var(--heading-color);
 }
 
 #gitHubLink {

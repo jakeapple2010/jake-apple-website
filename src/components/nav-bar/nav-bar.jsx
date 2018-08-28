@@ -1,4 +1,4 @@
-import React, { Component, ReactDOM } from 'react'
+import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 class TopNav extends Component {
@@ -18,6 +18,11 @@ class TopNav extends Component {
         this.props.scrollTo(clickedPage);
     }
 
+    scrollTo = (clickedPage) => {
+        this.props.setCurrentPage(clickedPage);
+        this.props.scrollTo(clickedPage);
+    }
+
     render() {
         var sideNavClassName = "top-nav " + (this.props.clicked === true ? "clicked" : "hidden flex-column");
         let links = this.state.pages.map(x => 
@@ -30,6 +35,7 @@ class TopNav extends Component {
                 {x}
             </Link>
         );
+
 
         return (
             <div className={sideNavClassName}>
