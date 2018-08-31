@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom'
 import HamburgerMenu from './../nav-bar/hamburger-menu.jsx';
 import TopNav from './../nav-bar/nav-bar';
-import About from './../about/about';
+import Profile from '../profile/profile';
 import NameComponent from './../name/name';
 import Experience from './../experience/experience';
 import $ from 'jquery'; 
@@ -60,7 +60,7 @@ class App extends Component {
 
           <div className="content">
             <NameComponent id="Name"/>
-            <About id="Profile"/>
+            <Profile id="Profile"/>
             <Experience id="Experience"/>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './about.css'
+import './profile.css'
 import * as GitHubLogo from './content/GitHub_Logo_White.png'
 
 export default class about extends Component {
