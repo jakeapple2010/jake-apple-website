@@ -5,8 +5,8 @@ import * as GitHubLogo from './content/GitHub_Logo_White.png'
 export default class about extends Component {
     render() {
         return (
-            <div className="about-body" id={this.props.id} key={this.props.id}>
-                <div className="about" >
+            <div className="component-wrapper" id={this.props.id} key={this.props.id}>
+                <div className="component-content" >
                     <div className="profile-heading">
                         <h2>Profile</h2>
                         <div>Full stack developer</div>

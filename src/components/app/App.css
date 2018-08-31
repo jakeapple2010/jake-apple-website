@@ -25,3 +25,20 @@
 .content {
   width: 100%;
 }
+
+.component-wrapper {
+  width: auto;
+  color: white;
+
+  font-family: 'Open Sans', sans-serif !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.component-content {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1000px;
+}

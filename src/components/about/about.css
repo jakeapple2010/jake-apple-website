@@ -5,25 +5,14 @@
     --main-text-color: #e0e0e0;
 }
 
-.about-body {
-    padding: 25;
+.component-wrapper {
     background-color: var(--main-bg-color);
-    height: 600px;
-    width: auto;
-    color: white;
-
-    font-family: 'Open Sans', sans-serif !important;
-
-    display: flex;
-    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
-.about {
+.component-content {
     background-color: var(--main-bg-color);
-    display: flex;
-    flex-flow: row wrap;
-    padding-left: 27.5%;
-    padding-right: 27.5%;
 }
 
 .profile-heading {
