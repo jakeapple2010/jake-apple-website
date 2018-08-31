@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom'
 import HamburgerMenu from './../nav-bar/hamburger-menu.jsx';
 import TopNav from './../nav-bar/nav-bar';
-import About from './../about/about'
-import NameComponent from './../name/name'
+import About from './../about/about';
+import NameComponent from './../name/name';
+import Experience from './../experience/experience';
 import $ from 'jquery'; 
 import './App.css';
 
@@ -16,7 +17,8 @@ class App extends Component {
       currentPage: "Name",
       pages: [
         "Name",
-        "Profile"
+        "Profile",
+        "Experience"
       ]
     }
   }
@@ -59,6 +61,7 @@ class App extends Component {
           <div className="content">
             <NameComponent id="Name"/>
             <About id="Profile"/>
+            <Experience id="Experience"/>
           </div>
         </div>
       </BrowserRouter>
