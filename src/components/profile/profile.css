@@ -45,6 +45,12 @@ div {
 .profile-picture-img {
     border-radius: 50%;
     border: 10px solid var(--border-color);
+
+    display: block;
+    max-width:250px;
+    max-height:250px;
+    width: auto;
+    height: auto;
 }
 
 h3 {

@@ -12,7 +12,7 @@ export default function experience(props){
                     <div className="flex">
                         <div className="job">
                             <div className="job-title">Pluralsight</div>
-                            <div className="sub-title">dates - dates</div>
+                            <div className="sub-title">Apr 2017 - Present</div>
                         </div>
                         <div className="job-description">column 2</div>
                     </div>

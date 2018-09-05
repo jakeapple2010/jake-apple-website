@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom'
-import HamburgerMenu from './../nav-bar/hamburger-menu.jsx';
 import TopNav from './../nav-bar/nav-bar';
 import Profile from '../profile/profile';
 import NameComponent from './../name/name';
@@ -24,9 +23,13 @@ class App extends Component {
   }
 
   toggleNav = () => {
-    this.setState((prevState) => {
-      return { navClicked: !prevState.navClicked }
-    })
+    var viewWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
+    if (viewWidth < 1000) {
+      this.setState((prevState) => {
+        return { navClicked: !prevState.navClicked }
+      })
+    }
   }
 
   setCurrentPage = (currentPage) => {
@@ -41,7 +44,7 @@ class App extends Component {
   scrollTo(id) {
     $([document.documentElement, document.body]).animate({
       scrollTop: $(`#${id}`).offset().top
-    }, 750);
+    }, "medium");
   }        
 
   render() {
@@ -51,12 +54,12 @@ class App extends Component {
           <TopNav 
             clicked={this.state.navClicked} 
             toggleNav={this.toggleNav} 
+            navClicked={this.state.navClicked}
             currentPage={this.state.currentPage} 
             setCurrentPage={this.setCurrentPage} 
             scrollTo={this.scrollTo} 
             pages={this.state.pages} 
           />
-          <HamburgerMenu toggleNav={this.toggleNav} clicked={this.state.navClicked}/>
 
           <div className="content">
             <NameComponent id="Name"/>

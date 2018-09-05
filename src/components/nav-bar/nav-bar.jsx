@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import HamburgerMenu from './../nav-bar/hamburger-menu';
+import ExplodedMenu from './../nav-bar/exploded-menu'
 
 class TopNav extends Component {
     constructor(props) {
@@ -27,6 +29,7 @@ class TopNav extends Component {
         var sideNavClassName = "top-nav " + (this.props.clicked === true ? "clicked" : "hidden flex-column");
         let links = this.state.pages.map(x => 
             <Link 
+                className="link"
                 to={"/" + x}  
                 onClick={(e) => this.handleLinkClick(e, x)} 
                 id={x === this.props.currentPage ? "active" : null}
@@ -38,11 +41,17 @@ class TopNav extends Component {
 
 
         return (
-            <div className={sideNavClassName}>
-                <div className="links flex-column">
-                    {links}
+            <div>
+                <HamburgerMenu toggleNav={this.props.toggleNav} clicked={this.props.navClicked}/>
+                <ExplodedMenu links={links}/>
+
+                <div className={sideNavClassName}>
+                    <div className="links flex-column">
+                        {links}
+                    </div>
                 </div>
             </div>
+
         );
     }
 }
