@@ -22,7 +22,9 @@ export default class about extends Component {
                             ed turpis ornare gravida vel vitae magna. Nunc in orci elit. 
                         </div>
                     </div>
-                    <img className="profile-picture-img" src="https://s.gravatar.com/avatar/28f1a06272000ef136be2912ae39ef94?s=250"/>
+                    <div className="horizontal-align">
+                        <img className="profile-picture-img" src="https://s.gravatar.com/avatar/28f1a06272000ef136be2912ae39ef94?s=250"/>
+                    </div>
                     <div className="details">
                         <h3>Details</h3>
                         <div className="description">
@@ -32,12 +34,12 @@ export default class about extends Component {
                             <br/>
                             <p><strong>Location:</strong> Utah, United States</p>
                             <br/>
-                            <p className="vertical-align">
+                            <p className="vertical-align gitHubLink">
                                 <strong>
                                     Codes: 
                                 </strong>
                                 <a className="vertical-align" href='https://github.com/jakeapple2010'>
-                                    <img id='gitHubLink' src={GitHubLogo} alt='GitHub link'/>
+                                    <img id='link' src={GitHubLogo} alt='GitHub link'/>
                                 </a>
                             </p>
                         </div>

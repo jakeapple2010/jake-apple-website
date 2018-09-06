@@ -3,15 +3,21 @@
 }
 
 .exploded-menu-container {
-display: none;
+  display: none;
 }
 
 .hamburger-container {
   position: fixed;
   left: 0;
+  width: 100%;
+
   cursor: pointer;
-  padding: 17px;
+
   z-index: 2;
+}
+
+.hamburger-button {
+  padding: 17px;
 }
 
 .clicked .bar1 {
@@ -38,6 +44,8 @@ display: none;
   background-color: #000000;
   margin: 5px 0;
   transition: 0.4s;
+
+  color: black;
 }
 
 .top-nav {

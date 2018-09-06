@@ -7,9 +7,11 @@ const HamburgerMenu = (props) => {
     return (
         <div>
             <div className={"hamburger-container " + className} onClick={props.toggleNav}>
-                <div className="bar1"></div>
-                <div className="bar2"></div>
-                <div className="bar3"></div>
+                <div className="hamburger-button">
+                    <div className="bar1"></div>
+                    <div className="bar2"></div>
+                    <div className="bar3"></div>
+                </div>
             </div>
         </div>
     )

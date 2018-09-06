@@ -13,3 +13,8 @@
     font-weight: 500;
     letter-spacing: 1px;
 }
+
+.name>.component-content {
+    background-color: white;
+    color: black;
+}

@@ -42,7 +42,24 @@
   flex-flow: row wrap;
 }
 
-@media (min-width: 1000px) {
+.vertical-align {
+    display: flex;
+    align-content: center;
+}
+
+.horizontal-align {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 300px) {
+  .component-content {
+    max-width: 80vw;
+  }
+}
+
+@media (min-width: 768px) {
   .component-content {
     max-width: 600px;
   }
