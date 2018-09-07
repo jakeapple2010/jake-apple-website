@@ -7,7 +7,7 @@ export default class about extends Component {
         return (
             <div className="component-wrapper" id={this.props.id} key={this.props.id}>
                 <div className="component-content" >
-                    <div className="profile-heading">
+                    <div className="component-heading">
                         <h2>Profile</h2>
                         <div>Full stack developer</div>
                     </div>
