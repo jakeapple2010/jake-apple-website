@@ -17,9 +17,7 @@ export default class about extends Component {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             Suspendisse et sem id purus volutpat vestibulum nec ac eros. 
                             Proin ullamcorper quis mi a scelerisque. Maecenas tempus 
-                            efficitur convallis. Vestibulum ante ipsum primis in faucibus 
-                            orci luctus et ultrices posuere cubilia Curae; Cras et lectus s
-                            ed turpis ornare gravida vel vitae magna. Nunc in orci elit. 
+                            efficitur convallis.
                         </div>
                     </div>
                     <div className="horizontal-align">
